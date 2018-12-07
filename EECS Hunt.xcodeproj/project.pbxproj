@@ -16,6 +16,9 @@
 		1D45C7ED21B069F600670824 /* Player2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45C7EC21B069F600670824 /* Player2ViewController.swift */; };
 		1D45C7F321B06A1D00670824 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45C7F221B06A1D00670824 /* ColorService.swift */; };
 		1DB711E121B06E20002A6E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D45C7F421B06A3400670824 /* Main.storyboard */; };
+		C08D077F21BAD181008B3480 /* ProductInfo.sks in Resources */ = {isa = PBXBuildFile; fileRef = C08D077E21BAD181008B3480 /* ProductInfo.sks */; };
+		C08D07CA21BAD829008B3480 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C08D07C921BAD828008B3480 /* GameScene.sks */; };
+		C08D07CC21BAD834008B3480 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08D07CB21BAD834008B3480 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +29,13 @@
 		1D45C7DD21B0697E00670824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D45C7E021B0697E00670824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D45C7E221B0697E00670824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D45C7EA21B069F400670824 /* Player1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Player1ViewController.swift; path = "/Users/haleysteele/Desktop/EECS Hunt/EECS Hunt/Player1ViewController.swift"; sourceTree = "<absolute>"; };
+		1D45C7EA21B069F400670824 /* Player1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player1ViewController.swift; sourceTree = "<group>"; };
 		1D45C7EC21B069F600670824 /* Player2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player2ViewController.swift; sourceTree = "<group>"; };
-		1D45C7F221B06A1D00670824 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorService.swift; path = "/Users/haleysteele/Desktop/EECS Hunt/EECS Hunt/ColorService.swift"; sourceTree = "<absolute>"; };
-		1D45C7F421B06A3400670824 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "/Users/haleysteele/Desktop/EECS Hunt/EECS Hunt/Main.storyboard"; sourceTree = "<absolute>"; };
+		1D45C7F221B06A1D00670824 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
+		1D45C7F421B06A3400670824 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "/Users/qjawls2003/Desktop/EECS-Scavenger-Hunt/EECS Hunt/Main.storyboard"; sourceTree = "<absolute>"; };
+		C08D077E21BAD181008B3480 /* ProductInfo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ProductInfo.sks; sourceTree = "<group>"; };
+		C08D07C921BAD828008B3480 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C08D07CB21BAD834008B3480 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../GameTest/GameTest/GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				1D45C7D421B0697D00670824 /* AppDelegate.swift */,
 				1D45C7D621B0697D00670824 /* art.scnassets */,
 				1D45C7D821B0697D00670824 /* ARViewController.swift */,
+				C08D07C921BAD828008B3480 /* GameScene.sks */,
+				C08D07CB21BAD834008B3480 /* GameScene.swift */,
+				C08D077E21BAD181008B3480 /* ProductInfo.sks */,
 				1D45C7F221B06A1D00670824 /* ColorService.swift */,
 				1D45C7EA21B069F400670824 /* Player1ViewController.swift */,
 				1D45C7EC21B069F600670824 /* Player2ViewController.swift */,
@@ -136,7 +145,9 @@
 			files = (
 				1D45C7D721B0697D00670824 /* art.scnassets in Resources */,
 				1D45C7E121B0697E00670824 /* LaunchScreen.storyboard in Resources */,
+				C08D077F21BAD181008B3480 /* ProductInfo.sks in Resources */,
 				1D45C7DE21B0697E00670824 /* Assets.xcassets in Resources */,
+				C08D07CA21BAD829008B3480 /* GameScene.sks in Resources */,
 				1DB711E121B06E20002A6E47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08D07CC21BAD834008B3480 /* GameScene.swift in Sources */,
 				1D45C7ED21B069F600670824 /* Player2ViewController.swift in Sources */,
 				1D45C7D921B0697D00670824 /* ARViewController.swift in Sources */,
 				1D45C7EB21B069F400670824 /* Player1ViewController.swift in Sources */,
@@ -291,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YPRDD2S5C;
 				INFOPLIST_FILE = "EECS Hunt/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5YPRDD2S5C;
 				INFOPLIST_FILE = "EECS Hunt/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

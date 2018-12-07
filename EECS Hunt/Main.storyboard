@@ -80,14 +80,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DqJ-U5-35n"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-3L-6OO">
-                                <rect key="frame" x="20" y="609" width="50" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <segue destination="Hx5-se-Xrh" kind="show" id="IJx-dI-6bf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0x-0I-hFT">
                                 <rect key="frame" x="351" y="609" width="43" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -120,6 +112,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-3L-6OO">
+                                <rect key="frame" x="20" y="609" width="50" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="Hx5-se-Xrh" kind="show" id="mm6-5n-Aa1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -159,16 +159,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6se-B0-7mW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Hx5-se-Xrh" id="KNC-Ng-FOI"/>
+                                </connections>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="6se-B0-7mW" id="C6w-8p-IVy"/>
+                        <outlet property="view" destination="9wP-p3-aov" id="Cqo-rv-gUs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87v-tr-pG0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2125.5999999999999" y="425.93703148425789"/>
+            <point key="canvasLocation" x="2123.1884057971015" y="425.22321428571428"/>
         </scene>
         <!--Player 2-->
         <scene sceneID="yFb-J5-pbJ">
@@ -182,17 +189,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yxt-f1-hbe">
-                                <rect key="frame" x="30" y="74" width="106" height="100.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yxt-f1-hbe">
+                                <rect key="frame" x="30" y="74" width="354" height="748"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connections: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-yB-1qM">
-                                        <rect key="frame" x="0.0" y="0.0" width="106" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Xs-gF-PIf">
-                                        <rect key="frame" x="0.0" y="50.5" width="106" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Xs-gF-PIf">
+                                        <rect key="frame" x="0.0" y="50.5" width="354" height="697.5"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -264,7 +271,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jTg-Db-hHp" secondAttribute="trailing" constant="5" id="b4Y-Xf-J0O"/>
                             <constraint firstItem="uV6-eC-pKJ" firstAttribute="top" secondItem="6cf-SU-Pcf" secondAttribute="bottom" constant="8" id="c7D-31-5FF"/>
                             <constraint firstItem="Lpf-xE-WHn" firstAttribute="top" secondItem="37q-OR-CCQ" secondAttribute="bottom" constant="8" id="edZ-1w-tOY"/>
+                            <constraint firstItem="Yxt-f1-hbe" firstAttribute="centerY" secondItem="rcJ-xd-cXA" secondAttribute="centerY" id="gZa-pZ-6pw"/>
                             <constraint firstItem="jTg-Db-hHp" firstAttribute="top" secondItem="37q-OR-CCQ" secondAttribute="bottom" constant="8" id="hbx-pd-Hfk"/>
+                            <constraint firstItem="Yxt-f1-hbe" firstAttribute="centerX" secondItem="rcJ-xd-cXA" secondAttribute="centerX" id="hjM-da-1wu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uV6-eC-pKJ" secondAttribute="trailing" constant="10" id="jOx-nJ-UVZ"/>
                             <constraint firstItem="jTg-Db-hHp" firstAttribute="leading" secondItem="Lpf-xE-WHn" secondAttribute="trailing" constant="8" id="jb8-oe-Ov4"/>
                             <constraint firstItem="6cf-SU-Pcf" firstAttribute="trailing" secondItem="rcJ-xd-cXA" secondAttribute="trailingMargin" constant="5" id="nup-mq-IaN"/>
